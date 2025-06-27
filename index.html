@@ -16,12 +16,16 @@
     border-radius: 2px;
     cursor: pointer;
     margin-right: 8px;
+    transition: opacity 0.15s;
   }
 
   .subscribe:hover{
-    background-color: red;
+    opacity: 0.8;
   }
 
+  .subscribe:active{
+    opacity: 0.6;
+  }
 
   .join{
     background-color: white;
@@ -34,6 +38,18 @@
     height: 30px;
     cursor: pointer;
     margin-right: 8px;
+    transition: 
+      opacity 0.15s,
+      background-color 0.15s;
+  }
+
+  .join:hover{
+    background-color: dodgerblue;
+    color: white;
+  }
+
+  .join:active{
+    opacity: 0.8;
   }
 
   .follow{
@@ -49,12 +65,15 @@
     font-weight: bold;
     font-size: 12px;
   }
+
+  .follow:hover{
+    box-shadow: 
+  }
+
 </style>
 
 
 <body>
-  <p>This is a test page</p>
-    
   <button class="subscribe">
     SUBSCRIBE
   </button>
